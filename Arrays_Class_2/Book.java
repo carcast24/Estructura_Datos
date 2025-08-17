@@ -6,7 +6,9 @@ public class Book {
     private boolean isAvailable;
 
     // Constructor
-    public Book(String title, String author, String isbn, boolean isAvailable) {
+
+    public Book(String title, String aurhor, String isbn, boolean isAvailable, String author) {
+
         this.title = title;
         this.author = author;
         this.isbn = isbn;
