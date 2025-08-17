@@ -6,7 +6,9 @@ public class Book {
     private boolean isAvailable;
 
     // Constructor
-    public Book(String title, String aurhor, String isbn, boolean isAvailable, String author) {
+
+    public Book(String title, String author, String isbn, boolean isAvailable) {
+
         this.title = title;
         this.author = author;
         this.isbn = isbn;
@@ -42,12 +44,12 @@ public class Book {
     }
 
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
-                ", isAvailable=" + isAvailable +
-                '}';
+        return "Titulo: " + title + "\n" +
+                 "| Autor: " + author + "\n" +
+                 "| Id: " + isbn + "\n" +
+                 "| Disponible: " + (isAvailable ? "Si" : "No") + "\n" +
+                 "-------------------------------------------------";
+
     }
 
 }
