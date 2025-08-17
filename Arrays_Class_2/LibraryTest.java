@@ -20,7 +20,22 @@ public class LibraryTest {
 
         // buscar libro por titulo
         System.out.println("Ingresa el nombre del libro");
-        Book busqueda : library.busquedaLibros()
+
+        
+
+        // evaluo que la entrada sea correcta
+        String titulo = scanner.nextLine();
+        if (titulo == null || titulo.trim().isEmpty()){
+            System.out.println("Debes ingresar un nombre");
+        }
+        Book busqueda = library.busquedaLibros(titulo);
+        
+        if (busqueda == null){
+            System.out.println("el libro buscado no ha sido encontrado");
+        } else{
+            System.out.println("Resultado encontrado = " + busqueda);
+        }
+
 
     }
 }
