@@ -47,6 +47,8 @@ public class LibraryTest {
         }
         library.displayAllBooks();
 
+        scanner.close();
+
 
 
 
