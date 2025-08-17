@@ -19,6 +19,7 @@ public class LibraryTest {
         library.displayAllBooks();
 
         // buscar libro por titulo
+        System.out.println("busqueda de libros");
         System.out.println("Ingresa el nombre del libro");
 
         
@@ -37,7 +38,7 @@ public class LibraryTest {
         }
 
         // eliminar libros
-        System.out.println("¿Que libro desea eliminar?");
+        System.out.println("Digita el isbn del libro que desea eliminar");
         String titulo2 = scanner.nextLine();
         if (titulo2 == null || titulo2.trim().isEmpty()){
             System.out.println("Debes ingresar un nombre");
