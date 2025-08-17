@@ -36,6 +36,20 @@ public class LibraryTest {
             System.out.println("Resultado encontrado = " + busqueda);
         }
 
+        // eliminar libros
+        System.out.println("¿Que libro desea eliminar?");
+        String titulo2 = scanner.nextLine();
+        if (titulo2 == null || titulo2.trim().isEmpty()){
+            System.out.println("Debes ingresar un nombre");
+        }else {
+            library.removeBook(titulo2);
+        }
+        library.displayAllBooks();
+
+
+
+
+
 
     }
 }
