@@ -1,8 +1,8 @@
 public class Cat implements Animal{
-    private string cria;
+    private String cria;
     private int lives;
 
-    public Cat(string cria, int lives){
+    public Cat(String cria, int lives){
         this.cria = cria;
         this.lives = lives;
     }
@@ -17,7 +17,7 @@ public class Cat implements Animal{
     }
 
     @Override
-    public makeSound(){
+    public void makeSound(){
         System.out.println("ronronea..");
     }
 

@@ -1,9 +1,9 @@
 public class Rabbit implements Animal{
     
-    private string furColor;
-    private double earlenght;
+    private String furColor;
+    private double earlength;
     
-    public Rabbit(string furColor, double earlenght){
+    public Rabbit(String furColor, double earlenght){
         this.furColor = furColor;
         this.earlength = earlenght;
     }
@@ -19,7 +19,7 @@ public class Rabbit implements Animal{
     }
 
     @Override
-    public makeSound(){
+    public void makeSound(){
         System.out.println("Zapatea..");
     }
 
@@ -38,17 +38,17 @@ public class Rabbit implements Animal{
     }
 
     public void wiggleEars(){
-        System.out.println("Moviendo orejitas de " + earlenght + " cm" );
+        System.out.println("Moviendo orejitas de " + earlength + " cm" );
     }
 
     // getter methods
 
-    public string getFurColor(){
+    public String getFurColor(){
         return this.furColor;
     }
 
     public double getEarlength(){
-        return this.earlenght;
+        return this.earlength;
     }
 
 }
