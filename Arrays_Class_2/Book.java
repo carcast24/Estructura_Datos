@@ -42,12 +42,12 @@ public class Book {
     }
 
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
-                ", isAvailable=" + isAvailable +
-                '}';
+        return "Titulo: " + title + "\n" +
+                 "| Autor: " + author + "\n" +
+                 "| Id: " + isbn + "\n" +
+                 "| Disponible: " + (isAvailable ? "Si" : "No") + "\n" +
+                 "-------------------------------------------------";
+
     }
 
 }
