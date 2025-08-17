@@ -42,4 +42,18 @@ public class Library {
         System.out.println("Libro no encontrado.");
     }
 
+    public void displayAllBooks (){
+        System.out.println("La biblioteca tiene: " + bookCount + " y una Capacidad de \n" + books.length + " libros");
+        System.out.println("");
+        System.out.println("**** Inventario actual ****");
+        if (bookCount == 0){
+            System.out.println("Biblioteca Vacia");
+        } else {
+            for (int i = 0; i < bookCount; i++){
+                System.out.println(books[i]);
+            }
+        }
+    }
+
 }
+
